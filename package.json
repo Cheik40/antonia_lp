@@ -2,7 +2,7 @@
     "name": "site-photographie",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://antonia.github.io/antonia_lp",
+    "homepage": "https://cheik40.github.io/antonia_lp/",
     "dependencies": {
         "@react-icons/all-files": "^4.1.0",
         "@testing-library/jest-dom": "^5.17.0",
