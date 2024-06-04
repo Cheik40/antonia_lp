@@ -97,7 +97,7 @@
     padding: 10px;
     cursor: pointer;
     position: relative;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     /* border: 1px solid #000fff; */
 }
 
@@ -128,14 +128,15 @@
 }
 
 .subsubmenu-item {
-    padding: 10px;
+    transition: 0.2s ease-in-out;
+    padding: 5px;
     cursor: pointer;
     /* border: 1px solid #000fff; */
 }
 
 /* les link ajouter plus tard */
 .subsubmenu-item-link {
-    padding: 10px;
+    padding: 0px;
     cursor: pointer;
     text-decoration: none;
     color: #585858;
@@ -143,7 +144,7 @@
 
 .subsubmenu-item:hover,
 .subsubmenu-item.active {
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
     /* border: 1px solid #000fff; */
     color: #000;
@@ -153,7 +154,7 @@
 /* les link ajouter plus tard */
 .subsubmenu-item-link:hover,
 .subsubmenu-item-link.active {
-    padding: 10px;
+    padding: 0px;
     cursor: pointer;
     /* border: 1px solid #000fff; */
     color: #000;

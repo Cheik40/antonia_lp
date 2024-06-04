@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/GalleryProjetCacheCache.css"; // Assurez-vous d'avoir le fichier CSS pour styliser la galerie
 // import Project1 from "./CarouselProjet";
-// import { Carousel } from "react-responsive-carousel";
+import { Carousel } from "react-responsive-carousel";
 import "../../styles/galery.css";
 
 const GalleryProjetCacheCache = () => {
+    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
     // const [selectedImageIndex, setSelectedImageIndex] = useState(null);
-    // const [selectedImageIndex, setSelectedImageIndex] = useState(null);
-    // const [selectedImage, setSelectedImage] = useState(0);
-    // const [selectedImageList, setSelectedImageList] = useState([]);
+    const [selectedImage, setSelectedImage] = useState(0);
+    const [selectedImageList, setSelectedImageList] = useState([]);
 
-    // const handleImageClick = (index) => {
-    //     setSelectedImageIndex(index);
-    // };
+    const handleImageClick = (index) => {
+        setSelectedImageIndex(index);
+    };
 
     // Tableau d'images avec des informations sur chaque image
     const images = [
@@ -28,22 +28,19 @@ const GalleryProjetCacheCache = () => {
             alt: "Photo 2",
             description: "Description de la photo 2",
         },
-        // Ajoutez ici d'autres objets d'images selon vos besoins
     ];
 
     // Gestionnaire de clic pour afficher une image dans le carousel
-    // const handleClick = (image) => {
-    //     setSelectedImage(image);
-    //     let pos = images.indexOf(image);
-    //     let removedItem = images.splice(pos, 1);
-    //     setSelectedImageList([image, removedItem]);
-    // };
+    const handleClick = (image) => {
+        setSelectedImage(image);
+        let pos = images.indexOf(image);
+        let removedItem = images.splice(pos, 1);
+    };
 
-    // // Gestionnaire de clic pour fermer le carousel
-    // const handleCloseCarousel = () => {
-    //     setSelectedImage(null);
-    //     setSelectedImageList([]);
-    // };
+    //  Gestionnaire de clic pour fermer le carousel
+    const handleCloseCarousel = () => {
+        setSelectedImage(null);
+    };
 
     // const images = [
     //     require("../../assets/Cache_cache/cache_cache_1.jpg"),
@@ -55,17 +52,17 @@ const GalleryProjetCacheCache = () => {
     return (
         <div className='GalleryProjetCircus'>
             <div className='rowGPC'>
-                {images.map((image) => (
-                    <div className='rowGPC-1-col-1'>
-                        <img
-                            src={image.src}
-                            alt={image.alt}
-                            // onClick={() => handleImageClick(0)}
-                            // key={1}
-                            // onClick={() => handleClick(image)}
-                        />
-                    </div>
-                ))}
+                {/* {images.map((image) => ( */}
+                <div className='rowGPC-1-col-1'>
+                    <img
+                        src={require("../../assets/Cache_cache/cache_cache_1.jpg")}
+                        alt='cache_cache_1.jpg'
+                        onClick={() => handleImageClick(0)}
+                        // key={1}
+                        // onClick={() => handleClick(image)}
+                    />
+                </div>
+                {/* ))} */}
             </div>
 
             <div className='rowGPC'>
@@ -118,7 +115,7 @@ const GalleryProjetCacheCache = () => {
                 {/* Deuxième ligne avec trois photos de même taille */}
                 <div className='rowGPC-6-col-1'>
                     <div className='title-description'>
-                        <span>cache-cache </span>
+                        <span className='title-cache-cache'>cache-cache </span>
                         <br />
                         [2021]
                     </div>
@@ -131,7 +128,7 @@ const GalleryProjetCacheCache = () => {
             {/* {selectedImageIndex !== -1 && (
                 <Project1 current={selectedImageIndex} images={images} />
             )} */}
-            {/* {selectedImage !== null && (
+            {selectedImage !== null && (
                 <div className='modal'>
                     <div className='modal-content'>
                         <span className='close' onClick={handleCloseCarousel}>
@@ -151,7 +148,7 @@ const GalleryProjetCacheCache = () => {
                         </Carousel>
                     </div>
                 </div>
-            )} */}
+            )}
         </div>
     );
 };

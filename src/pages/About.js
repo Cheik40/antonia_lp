@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../componants/navbar/Navbar";
 import "../styles/About.css";
+import { FaRegCopyright } from "react-icons/fa";
 
 function CommissionSoireRevelation() {
     const [position, setPosition] = useState(window.scrollY);
@@ -39,6 +40,10 @@ function CommissionSoireRevelation() {
                                 src={require("../assets/About/Silver_Night_083.jpg")}
                                 alt='Antonia Le Paih'
                             />
+                            <div className='copyright'>
+                                <FaRegCopyright />
+                                Jean-Baptiste Salaün
+                            </div>
                         </div>
                         <div className='row-col-2'>
                             <p>

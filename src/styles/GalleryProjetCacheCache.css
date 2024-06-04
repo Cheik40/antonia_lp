@@ -8,7 +8,7 @@
     margin: 80px auto;
     /* border: 1px solid #000; */
     font-family: OverpassMono;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
 /* Styles des lignes */
@@ -50,10 +50,11 @@
     flex: 0 0 calc(100%); /* 4 colonnes par ligne */
     /* padding: 2px 4px; Espacement horizontal entre les colonnes */
     /* padding: 0px 5px; */
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     margin-top: 5%;
 }
-span {
-    font-size: 1rem;
-    font-weight: 600;
+.title-cache-cache {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
 }

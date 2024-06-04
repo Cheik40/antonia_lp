@@ -155,7 +155,7 @@ const Navbar = () => {
                                                     Cérémonie des Césars 2022
                                                 </Link>
                                             </li>
-                                            <li className='subsubmenu-item-link'>
+                                            <li className='subsubmenu-item'>
                                                 <Link
                                                     className='subsubmenu-item-link'
                                                     to='/commissionCesarLyceen'
@@ -166,33 +166,15 @@ const Navbar = () => {
                                         </ul>
                                     )}
                                 </li>
-                                <li
-                                    className='submenu-item'
-                                    // onClick={() =>
-                                    //     toggleSubMenu(
-                                    //         "commission",
-                                    //         "subcommission2"
-                                    //     )
-                                    // }
-                                >
-                                    {/* {activeSubMenu["commission"] ===
-                                        "subcommission2" && (
-                                        <ul
-                                            className={`subsubmenu ${
-                                                menuOpen ? "active" : ""
-                                            }`}
-                                        >
-                                            <li className='subsubmenu-item'>
-                                                Sous-sous-commission 1
-                                            </li>
-                                            <li className='subsubmenu-item'>
-                                                Sous-sous-commission 2
-                                            </li>
-                                            <li className='subsubmenu-item'>
-                                                Sous-sous-commission 3
-                                            </li>
-                                        </ul>
-                                    )} */}
+                                <li className='submenu-item'>
+                                    <Link
+                                        className='subsubmenu-item-link'
+                                        to='/versaille'
+                                    >
+                                        Jardins de Versailles
+                                    </Link>
+                                </li>
+                                <li className='submenu-item'>
                                     <Link
                                         className='subsubmenu-item-link'
                                         to='/theatre'

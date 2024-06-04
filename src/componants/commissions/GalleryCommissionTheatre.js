@@ -3,6 +3,7 @@ import React from "react";
 // import Project1 from "./CarouselProjet";
 // import { Carousel } from "react-responsive-carousel";
 import "../../styles/galery.css";
+import { Outlet, Link } from "react-router-dom";
 
 const GalleryProjetCacheCache = () => {
     return (
@@ -108,7 +109,11 @@ const GalleryProjetCacheCache = () => {
                     2023.
                     <br />
                     <br />
-                    Lien de la captation vidéo : https://youtu.be/GV4LZgDk9lY{" "}
+                    Lien de la captation vidéo :{" "}
+                    <Link to='https://youtu.be/GV4LZgDk9lY'>
+                        {" "}
+                        https://youtu.be/GV4LZgDk9lY{" "}
+                    </Link>{" "}
                     <br />
                     (Camera 1 : Milo Garcia / Camera 2 : Antonia Le Paih)
                 </div>

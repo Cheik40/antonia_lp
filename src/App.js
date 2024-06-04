@@ -12,6 +12,7 @@ import ProjetCacheCache from "./pages/ProjetCacheCache";
 import ProjetLesEchappees from "./pages/ProjetLesEchappees";
 import Project1 from "./componants/Projets/CarouselProjet";
 import CommisionTheatre from "./pages/CommisionTheatre";
+import CommissionJardinsVersailles from "./pages/CommissionJardinsVersailles";
 
 function App() {
     return (
@@ -34,6 +35,10 @@ function App() {
                     element={<CommissionDejeuneNommine />}
                 />
                 <Route path='/theatre' element={<CommisionTheatre />} />
+                <Route
+                    path='/versaille'
+                    element={<CommissionJardinsVersailles />}
+                />
 
                 <Route path='/about' element={<About />} />
                 <Route path='/' element={<Contact />} />

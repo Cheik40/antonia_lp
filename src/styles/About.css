@@ -91,3 +91,7 @@ h2 {
 em {
     font-style: italic;
 }
+
+.copyright {
+    font-size: 0.7rem;
+}
